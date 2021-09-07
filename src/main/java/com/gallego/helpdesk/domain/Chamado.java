@@ -1,5 +1,6 @@
 package com.gallego.helpdesk.domain;
 
+//Verificando
 import java.time.LocalDate;
 import java.util.Objects;
 
