@@ -23,7 +23,7 @@ public class Tecnico extends Pessoa{
 		super();
 		addPerfil(Perfil.CLIENTE);
 	}
-	
+	//s
 	public Tecnico(TecnicoDTO obj) {
 		super();
 		this.id = obj.getId();
