@@ -12,7 +12,7 @@ import com.gallego.helpdesk.domain.dtos.TecnicoDTO;
 import com.gallego.helpdesk.domain.enums.Perfil;
 
 @Entity
-public class Tecnico extends Pessoa{
+public class Tecnico extends Pessoa {
 	private static final long serialVersionUID = 1L;
 	
 	@JsonIgnore

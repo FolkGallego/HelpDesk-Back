@@ -27,20 +27,20 @@ public class DBService {
 	
 	public void instanciaDB() {
 		
-		Tecnico tec1 = new Tecnico(null, "João Gallego", "40586987503", "joaogallego@gmail.com", "123");
+		Tecnico tec1 = new Tecnico(null, "João Gallego", "752.200.500-01", "joaogallego@gmail.com", "123");
 		tec1.addPerfil(Perfil.ADMIN);
-		Tecnico tec2 = new Tecnico(null, "Matheus silva", "404.856.758-07", "matheus@gmail.com", "123");
+		Tecnico tec2 = new Tecnico(null, "Matheus silva", "210.692.810-69", "matheus@gmail.com", "123");
 		tec2.addPerfil(Perfil.TECNICO);
-		Tecnico tec3 = new Tecnico(null, "Gustavo Lima", "111.786.668-07", "gustavo@gmail.com", "123");
-		Tecnico tec4 = new Tecnico(null, "Paulo Guedes", "888.458.695-02", "paulo@gmail.com", "123");
-		Tecnico tec5 = new Tecnico(null, "Taldo Costa", "568.458.457.11", "taldocosta@gmail.com", "123");
+		Tecnico tec3 = new Tecnico(null, "Gustavo Lima", "841.415.210-43", "gustavo@gmail.com", "123");
+		Tecnico tec4 = new Tecnico(null, "Paulo Guedes", "141.597.910-34", "paulo@gmail.com", "123");
+		Tecnico tec5 = new Tecnico(null, "Taldo Costa", "118.555.110-70", "taldocosta@gmail.com", "123");
+		Tecnico tec6 = new Tecnico(null, "Lucas de Mori", "430.183.620-98", "demori@gmail.com", "123");
 		
-		
-		Cliente cli1 = new Cliente(null, "Marcos Costa", "70585965806", "marcos@gmail.com", "123");
-		Cliente cli2 = new Cliente(null, "Lais Silva", "758.659.451.05", "lais@gmail.com", "123");
-		Cliente cli3 = new Cliente(null, "Lucas Spinelli", "869.458.222.05", "spinelli@gmail.com", "123");
-		Cliente cli4 = new Cliente(null, "Gabriela alarcomn", "968.458.222.45", "gabislar@gmail.com", "123");
-		Cliente cli5 = new Cliente(null, "Adriana Braga", "778.568.484.55", "adriana@gmail.com", "123");
+		Cliente cli1 = new Cliente(null, "Marcos Costa", "874.392.810-20", "marcos@gmail.com", "123");
+		Cliente cli2 = new Cliente(null, "Lais Silva", "903.408.630-56", "lais@gmail.com", "123");
+		Cliente cli3 = new Cliente(null, "Lucas Spinelli", "843.373.400-84", "spinelli@gmail.com", "123");
+		Cliente cli4 = new Cliente(null, "Gabriela alarcomn", "269.730.800-81", "gabislar@gmail.com", "123");
+		Cliente cli5 = new Cliente(null, "Adriana Braga", "222.593.450-93", "adriana@gmail.com", "123");
 		
 		Chamado c1 = new Chamado(null, Prioridade.MEDIA, Status.ANDAMENTO, "Chamado 01", "Primeiro Chamado", tec1, cli1);
 		Chamado c2 = new Chamado(null, Prioridade.ALTA, Status.ABERTO, "Chamado 02", "Segundo Chamado", tec2, cli2);
@@ -49,7 +49,7 @@ public class DBService {
 		Chamado c5 = new Chamado(null, Prioridade.ALTA, Status.ANDAMENTO, "Chamado 05", "Quinto Chamado", tec5, cli5);
 		Chamado c6 = new Chamado(null, Prioridade.MEDIA, Status.ENCERRADO, "Chamado 06", "Sexto Chamado", tec1, cli5);
 		
-		tecnicoRepository.saveAll(Arrays.asList(tec1, tec2, tec3, tec4, tec5));
+		tecnicoRepository.saveAll(Arrays.asList(tec1, tec2, tec3, tec4, tec5, tec6)); 
 		clienteRepository.saveAll(Arrays.asList(cli1, cli2, cli3, cli4, cli5));
 		chamadoRepository.saveAll(Arrays.asList(c1, c2, c3, c4, c5, c6));
 	}
