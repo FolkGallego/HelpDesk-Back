@@ -23,7 +23,7 @@ import com.gallego.helpdesk.domain.dtos.ClienteDTO;
 import com.gallego.helpdesk.services.ClienteService;
 
 @RestController
-@RequestMapping(value = "/clientes")//localhost:8080/tecnicos 
+@RequestMapping(value = "/clientes")//localhost:8080/clientes
 public class ClienteResource {
 	
 	@Autowired
