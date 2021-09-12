@@ -1,4 +1,4 @@
-package com.gallego.helpdesk.domain;
+package com.gallego.helpdesk.domain; 
 
 import java.io.Serializable;
 import java.time.LocalDate;
